@@ -13,10 +13,15 @@ namespace WebService
             obtenerMunicipios("ALACANT", "ALACANT");
         }
 
-        private static void obtenerMunicipios(string Provincia, string Municipio)
+        private static void obtenerMunicipios(string provincia, string municipio)
         {
             CallejerodelasedeelectrónicadelcatastroSoapClient soapClient = new CallejerodelasedeelectrónicadelcatastroSoapClient();
-            
+            //Consulta_DNPRCRequest request = new Consulta_DNPRCRequest { Provincia = provincia, Municipio = municipio };
+            ConsultaMunicipio consulta = new ConsultaMunicipio { Provincia = provincia , Municipio = municipio };
+
+
+
+            Console.WriteLine(consulta.Provincia);
         }
 
         private static void consumirWebServiceHello(string name)
