@@ -21,7 +21,7 @@ namespace WebService
 
 
 
-            Console.WriteLine(consulta.Provincia);
+            Console.WriteLine(consulta.);
         }
 
         private static void consumirWebServiceHello(string name)
